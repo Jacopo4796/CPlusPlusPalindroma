@@ -12,11 +12,11 @@ bool palindroma(string parola)
     for (int i = 0; i < parola.length(); i++)
     {
         cout << parola[i] << " == " << parola[k] << endl;
-        if (parola[i] == parola[k])
+        if (parola[i] == parola[k]) // ho fatto il confronto tra 'i' e 'k'. 
         {
-            k--;
+            k--; // se vera k decrementa.
         }
-        else
+        else // altrimenti 'i' e 'k' non sono uguali e gli dico di uscire.
         {
             return false;
             break;
